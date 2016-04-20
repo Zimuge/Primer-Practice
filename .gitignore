@@ -58,7 +58,6 @@ Temporary Items
 *.vcxproj
 *.vcxproj.filters
 *.sdf
-*.sln
 *.v12.suo
 ipch/
 Debug/
