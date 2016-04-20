@@ -59,9 +59,9 @@ Temporary Items
 *.vcxproj.filters
 *.sdf
 *.v12.suo
+*.db
 ipch/
 Debug/
 .vs/
-*.db
 *.tlog
 
