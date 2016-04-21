@@ -2,7 +2,8 @@
 #include "Message.h"
 
 /********************** constructor *********************/
- Message::Message(const std::string & str = "") : contents(str)
+
+ Message::Message(const std::string & str) : contents(str)
 {
 
 }
