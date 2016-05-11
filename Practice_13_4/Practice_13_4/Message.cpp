@@ -1,23 +1,23 @@
 #include "stdafx.h"
 #include "Message.h"
 
-			/********************** constructor *********************/
+/********************** constructor *********************/
 
 //default constructor
- Message::Message(const std::string & str = " ") : contents(str)
+Message::Message(const std::string & str = " ") : contents(str)
 {
 
 }
 
- // copy constructor
-Message::Message(const Message & msg):contents(msg.contents),folders(msg.folders)
+// copy constructor
+Message::Message(const Message & msg) :contents(msg.contents), folders(msg.folders)
 {
 	this->add_to_folders(msg);
 }
 
 
 
-         /***********************member function*******************/
+/***********************member function*******************/
 
 // function use to save message to a folder
 void Message::save(Folder & fd)
@@ -68,7 +68,7 @@ void Message::remove_from_folders()
 }
 
 
-         /*********************** operator *************************/
+/*********************** operator *************************/
 
 // operator = 
 Message & Message::operator =(const Message & msg)
@@ -78,7 +78,7 @@ Message & Message::operator =(const Message & msg)
 
 	// copy the contents
 	contents = msg.contents;
-	
+
 	// copy the folders 
 	folders = msg.folders;
 
@@ -89,7 +89,7 @@ Message & Message::operator =(const Message & msg)
 }
 
 
-		/*********************** deconstructor *******************/
+/*********************** deconstructor *******************/
 Message::~Message()
 {
 	remove_from_folders();
