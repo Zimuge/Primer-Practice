@@ -9,12 +9,12 @@ public:
 	Folder(const Folder & fd);
 
 	/*********************** member function **************/
-	void addMsg(const Message &);
-	void remMsg(const Message &);
-	\
-
+	void addMsg(Message &);
+	void remMsg( Message &);
+	
+	
 	/*********************** operator **************/
-	Folder &  operator = (const Folder &);
+	Folder &  operator = ( const Folder &);
 
 	/*********************** deconstructor **************/
 	~Folder();
